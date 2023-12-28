@@ -9,5 +9,4 @@ public class JavaScrapingTechnicalTaskApplication {
     public static void main(String[] args) {
         SpringApplication.run(JavaScrapingTechnicalTaskApplication.class, args);
     }
-
 }
