@@ -29,7 +29,7 @@ public class ScraperService {
     //@Scheduled(cron = "0 0 0 * * *")
     public List<JobItem> scrapeJobs(String jobFunction){
 
-        System.setProperty("webdriver.chrome.driver", "A:/chromedriver-win64/chromedriver-win64/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "your/path/to/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
         List<JobItem> jobs = new ArrayList<>();
