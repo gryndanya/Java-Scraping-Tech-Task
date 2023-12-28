@@ -61,35 +61,25 @@ public class ScraperService {
 
                     String jobPageUrl = Optional.of(jobPage.location())
                             .orElse("NOT_FOUND"); //1
-                    System.out.println(jobPageUrl);
                     String positionName = Optional.of(jobPage.select(".jqWDOR").text())
                             .orElse("NOT_FOUND"); //2
-                    System.out.println(positionName);
                     String organizationUrl = Optional.of(jobPage.select("[data-testid='button']").attr("href"))
                             .orElse("NOT_FOUND");  //3
-                    System.out.println(organizationUrl);
                     String linkToLogo = Optional.of(jobPage.select(".eTCoCQ").attr("src"))
                             .orElse("NOT_FOUND"); //4
-                    System.out.println(linkToLogo);
                     String organizationTitle = Optional.of(jobPage.select("[data-testid='content'] .cxrIfE p").text())
                             .orElse("NOT_FOUND"); //5
-                    System.out.println(organizationTitle);
                     String laborFunction = Optional.of(jobPage.select(".dmdAKU .bpXRKw").get(0).text())
                             .orElse("NOT_FOUND"); //6
-                    System.out.println(laborFunction);
                     String location = Optional.of(jobPage.select(".dmdAKU .bpXRKw").get(1).text())
                             .orElse("NOT_FOUND"); //7
-                    System.out.println(location);
                     String postedDate = Optional.of(jobPage.select(".dmdAKU .gRXpLa").get(0).text())
                             .orElse("NOT_FOUND"); //8
-                    System.out.println(postedDate);
                     String description = Optional.of(jobPage.select("[data-testid='careerPage']").html())
                             .orElse("NOT_FOUND"); //9
-                    System.out.println(description);
                     String tagsNames = Optional.of(jobBlock.select(".OHsAR").stream()
                             .map(Element::text)
                             .collect(Collectors.joining(","))).orElse("NOT_FOUND"); //10
-                    System.out.println(tagsNames);
 
                     jobs.add(JobItem.builder()
                             .jobPageUrl(jobPageUrl)
