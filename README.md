@@ -44,7 +44,7 @@ Spent around ~6-7 hours
 1. For sending requests to the website, you can use any of the following:
     - okhttp
     - jsoup
-2. As framework you can use - Spring Boot
+2. As framework, you can use - Spring Boot
 3. If you decide to render page to get information from site pages, use any of the following:
     - Selenium
     - Playwright
@@ -58,7 +58,7 @@ Spent around ~6-7 hours
 2. Enforcement of Object-Oriented Programming (OOP) principles 
 and adherence to clean code practices
 3. Scraping results - only first page of one of any job function
-4. Scraping results can be dump to SQL file, with database creation
+4. Scraping results can be dumped to SQL file, with database creation
 schema or in CSV format
 5. INSTALL.md - instructions on how to configure and run the project
 6. README.md - with short description
